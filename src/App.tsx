@@ -1,5 +1,6 @@
 import Hero from './components/Hero';
 import SectionIndicator from './components/SectionIndicator';
+import SignupForm from './components/SignupForm';
 import { landingPageData } from './data/landingPageData';
 
 function App() {
@@ -91,6 +92,8 @@ function App() {
           </div>
         </section>
 
+        <SignupForm />
+
         <section className="assurance-section" id="support">
           <div className="container assurance-grid">
             {assurances.map((item) => (
@@ -123,4 +126,6 @@ function App() {
 }
 
 export default App;
+
+
 

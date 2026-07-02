@@ -557,6 +557,109 @@ h2 {
   width: min(100%, 680px);
 }
 
+
+.signup-section {
+  background:
+    radial-gradient(circle at 82% 18%, rgb(29 143 114 / 10%), transparent 26%),
+    linear-gradient(135deg, #f5efe6 0%, #fffaf4 100%);
+}
+
+.signup-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(380px, 0.72fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.signup-copy {
+  max-width: 650px;
+}
+
+.signup-list {
+  display: grid;
+  gap: 14px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.signup-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--color-ink);
+  font-weight: 720;
+  line-height: 1.55;
+}
+
+.signup-list li::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--color-accent-dark);
+}
+
+.signup-form {
+  display: grid;
+  gap: 18px;
+  border: 1px solid rgb(222 214 202 / 84%);
+  border-radius: 22px;
+  background: rgb(255 250 244 / 84%);
+  padding: 28px;
+  box-shadow: 0 24px 72px rgb(21 26 23 / 10%);
+}
+
+.signup-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.signup-form input,
+.signup-form textarea {
+  width: 100%;
+  border: 1px solid rgb(21 26 23 / 14%);
+  border-radius: 12px;
+  background: white;
+  color: var(--color-ink);
+  padding: 14px 15px;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.signup-form textarea {
+  resize: vertical;
+}
+
+.signup-form input:focus,
+.signup-form textarea:focus {
+  border-color: var(--color-accent-dark);
+  box-shadow: 0 0 0 4px rgb(29 143 114 / 12%);
+}
+
+.form-message {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.form-message-error {
+  background: #fff0ed;
+  color: #9b2d1f;
+}
+
+.form-message-success {
+  background: rgb(29 143 114 / 12%);
+  color: var(--color-accent-dark);
+}
 .assurance-section {
   padding: 0 0 92px;
   background: linear-gradient(180deg, #f3ede4, #fffaf4);
@@ -744,6 +847,7 @@ h2 {
     min-height: auto;
   }
 }
+
 
 
 

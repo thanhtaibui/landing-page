@@ -8,6 +8,7 @@ export const landingPageData = {
     { id: 'technology', title: 'Công nghệ nhẫn' },
     { id: 'specs', title: 'Thông số kỹ thuật' },
     { id: 'app', title: 'Ứng dụng Oura' },
+    { id: 'signup', title: 'Nhận tư vấn' },
     { id: 'support', title: 'Cam kết hỗ trợ' },
   ],
   hero: {
@@ -89,6 +90,19 @@ export const landingPageData = {
       'Gợi ý cá nhân hóa dựa trên dữ liệu sinh trắc học của bạn',
     ],
   },
+  signup: {
+    eyebrow: 'Nhận tư vấn',
+    title: 'Để lại thông tin để nhận cập nhật về Oura Ring.',
+    description:
+      'Form này giúp người dùng đăng ký nhận tin và tư vấn thêm về tính năng, kích cỡ, khả năng theo dõi sức khỏe của Oura Ring.',
+    benefits: [
+      'Tư vấn lựa chọn kích cỡ nhẫn phù hợp',
+      'Nhận thông tin mới về tính năng theo dõi sức khỏe',
+      'Được gợi ý cách dùng Oura Ring theo mục tiêu cá nhân',
+    ],
+    submitLabel: 'Gửi thông tin',
+    successMessage: 'Cảm ơn bạn! Thông tin đã được ghi nhận trên giao diện demo.',
+  },
   assurances: [
     {
       title: 'Dữ liệu cá nhân',
@@ -108,4 +122,6 @@ export const landingPageData = {
     },
   ],
 };
+
+
 

@@ -16,7 +16,7 @@ export const landingPageData = {
     title: 'Hiểu cơ thể. Sống chủ động hơn.',
     description:
       'Oura Ring là nhẫn thông minh theo dõi giấc ngủ, hoạt động và phục hồi của bạn bằng dữ liệu chính xác, thiết kế tinh tế và trải nghiệm sử dụng hằng ngày rất nhẹ nhàng.',
-    primaryAction: { href: '#support', label: 'Nhận tư vấn' },
+    primaryAction: { href: '#signup', label: 'Nhận tư vấn' },
     secondaryAction: { href: '#technology', label: 'Tìm hiểu thêm' },
     rating: '4.7/5 từ hơn 50.000+ đánh giá',
     image: {
@@ -75,7 +75,8 @@ export const landingPageData = {
       { label: 'Kết nối', value: 'Bluetooth Low Energy', note: 'Đồng bộ dữ liệu với ứng dụng Oura trên điện thoại.' },
       { label: 'Tương thích', value: 'iOS và Android', note: 'Theo dõi dữ liệu và nhận gợi ý cá nhân hóa hằng ngày.' },
     ],
-  }, appSection: {
+  },
+  appSection: {
     eyebrow: 'Ứng dụng Oura',
     title: 'Dữ liệu rõ ràng. Hành động dễ dàng.',
     description:
@@ -122,6 +123,4 @@ export const landingPageData = {
     },
   ],
 };
-
-
 

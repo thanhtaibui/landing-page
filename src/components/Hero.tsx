@@ -28,7 +28,13 @@ function Hero() {
         </div>
 
         <div className="hero-visual">
-          <img className="hero-image" src={hero.image.src} alt={hero.image.alt} />
+          <img
+            className="hero-image"
+            src={hero.image.src}
+            alt={hero.image.alt}
+            decoding="async"
+            fetchPriority="high"
+          />
         </div>
       </div>
     </section>

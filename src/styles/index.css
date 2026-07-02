@@ -466,6 +466,7 @@ h2 {
   font-size: 0.94rem;
   line-height: 1.6;
 }
+
 .app-section {
   background:
     radial-gradient(circle at 65% 42%, rgb(198 146 73 / 16%), transparent 24%),
@@ -741,6 +742,7 @@ h2 {
   .hero-grid,
   .split-layout,
   .app-layout,
+  .signup-layout,
   .specs-layout,
   .text-only-layout {
     grid-template-columns: 1fr;
@@ -779,26 +781,48 @@ h2 {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --section-padding: 60px;
+  }
+
   .container {
     width: min(100% - 28px, var(--container-width));
   }
 
   .section-hero {
-    padding-top: 48px;
+    padding-top: 44px;
   }
 
   .hero-grid {
     min-height: auto;
-    gap: 20px;
+    gap: 16px;
+  }
+
+  .hero-copy,
+  .section-copy {
+    gap: 18px;
   }
 
   h1 {
-    font-size: clamp(3rem, 15vw, 4.25rem);
+    font-size: clamp(2.5rem, 12vw, 3.6rem);
+    line-height: 0.98;
+  }
+
+  h2,
+  .technology-section h2,
+  .specs-copy h2 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.06;
+  }
+
+  .eyebrow {
+    font-size: 0.74rem;
   }
 
   .section-lead,
   .section-copy p {
-    font-size: 1rem;
+    font-size: 0.96rem;
+    line-height: 1.65;
   }
 
   .action-row,
@@ -816,11 +840,39 @@ h2 {
   }
 
   .hero-visual {
-    min-height: 360px;
+    min-height: 320px;
   }
 
   .hero-image {
-    width: min(122%, 470px);
+    width: min(112%, 430px);
+  }
+
+  .benefit-grid {
+    gap: 18px;
+    padding: 32px 0;
+  }
+
+  .benefit-item p,
+  .assurance-card p,
+  .site-footer p {
+    font-size: 0.86rem;
+  }
+
+  .technology-section {
+    min-height: auto;
+  }
+
+  .technology-image {
+    min-height: 320px;
+    border-radius: 18px;
+  }
+
+  .technology-image img {
+    width: min(86%, 380px);
+  }
+
+  .section-image img {
+    max-width: 100%;
   }
 
   .benefit-grid,
@@ -828,6 +880,69 @@ h2 {
   .assurance-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .specs-section {
+    --section-padding: 64px;
+  }
+
+  .specs-layout {
+    gap: 28px;
+  }
+
+  .specs-copy {
+    gap: 16px;
+  }
+
+  .specs-copy h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .specs-grid {
+    gap: 10px;
+  }
+
+  .spec-card {
+    min-height: auto;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 10px 16px;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: none;
+  }
+
+  .spec-card p {
+    grid-column: 1;
+    font-size: 0.68rem;
+  }
+
+  .spec-card h3 {
+    grid-column: 1;
+    font-size: 1.06rem;
+  }
+
+  .spec-card span {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+
+  .insight-item p,
+  .signup-list li,
+  .check-list li {
+    font-size: 0.92rem;
+  }
+
+  .signup-layout {
+    gap: 30px;
+  }
+
+  .signup-form input,
+  .signup-form textarea {
+    padding: 12px 13px;
+    font-size: 0.94rem;
   }
 
   .benefit-item {
@@ -845,6 +960,79 @@ h2 {
 
   .section-image {
     min-height: auto;
+  }
+
+  .signup-form {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 52px;
+  }
+
+  .container {
+    width: min(100% - 22px, var(--container-width));
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 11vw, 3.05rem);
+  }
+
+  h2,
+  .technology-section h2,
+  .specs-copy h2 {
+    font-size: clamp(1.8rem, 8.6vw, 2.45rem);
+  }
+
+  .hero-copy {
+    padding-bottom: 8px;
+  }
+
+  .hero-visual {
+    min-height: 280px;
+  }
+
+  .hero-image {
+    width: min(110%, 360px);
+  }
+
+  .benefit-icon,
+  .insight-item span,
+  .assurance-card span {
+    width: 40px;
+    height: 40px;
+  }
+
+  .benefit-item {
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
+  }
+
+  .spec-card {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 14px;
+  }
+
+  .spec-card span {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .app-visual img {
+    width: min(104%, 390px);
+  }
+
+  .signup-form {
+    border-radius: 18px;
+    padding: 18px;
+  }
+
+  .button,
+  .store-row a {
+    min-height: 44px;
   }
 }
 

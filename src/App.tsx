@@ -41,7 +41,12 @@ function App() {
             </div>
 
             <div className="section-image technology-image">
-              <img src={technology.image.src} alt={technology.image.alt} />
+              <img
+                src={technology.image.src}
+                alt={technology.image.alt}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </section>
@@ -87,7 +92,12 @@ function App() {
             </div>
 
             <div className="section-image app-visual">
-              <img src={appSection.image.src} alt={appSection.image.alt} />
+              <img
+                src={appSection.image.src}
+                alt={appSection.image.alt}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </section>

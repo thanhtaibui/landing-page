@@ -13,7 +13,11 @@ const initialFormState: FormState = {
   goal: '',
 };
 
-function SignupForm() {
+type SignupFormProps = {
+  onSubmitSuccess?: () => void;
+};
+
+function SignupForm({ onSubmitSuccess }: SignupFormProps) {
   const { signup } = landingPageData;
   const [formState, setFormState] = useState(initialFormState);
   const [error, setError] = useState('');
@@ -45,6 +49,7 @@ function SignupForm() {
 
     setIsSubmitted(true);
     setFormState(initialFormState);
+    onSubmitSuccess?.();
   };
 
   return (

@@ -259,6 +259,11 @@ h2 {
   justify-items: center;
 }
 
+.hero-visual picture {
+  display: grid;
+  justify-items: center;
+}
+
 .hero-image {
   position: relative;
   z-index: 2;
@@ -840,11 +845,12 @@ h2 {
   }
 
   .hero-visual {
-    min-height: 320px;
+    min-height: 280px;
   }
 
   .hero-image {
-    width: min(112%, 430px);
+    width: min(104%, 380px);
+    filter: drop-shadow(0 24px 38px rgb(21 26 23 / 20%));
   }
 
   .benefit-grid {
@@ -991,11 +997,11 @@ h2 {
   }
 
   .hero-visual {
-    min-height: 280px;
+    min-height: 240px;
   }
 
   .hero-image {
-    width: min(110%, 360px);
+    width: min(100%, 320px);
   }
 
   .benefit-icon,

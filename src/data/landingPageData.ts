@@ -21,6 +21,8 @@ export const landingPageData = {
     rating: '4.7/5 từ hơn 50.000+ đánh giá',
     image: {
       src: '/oura-ring-hero (2).png',
+      mobileSrc: '/oura-ring-hero-mobile.webp',
+      desktopSrc: '/oura-ring-hero-desktop.webp',
       alt: 'Oura Ring màu đen nổi bật trên nền sáng',
     },
   },
@@ -123,4 +125,5 @@ export const landingPageData = {
     },
   ],
 };
+
 

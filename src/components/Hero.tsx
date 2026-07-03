@@ -28,13 +28,22 @@ function Hero() {
         </div>
 
         <div className="hero-visual">
-          <img
-            className="hero-image"
-            src={hero.image.src}
-            alt={hero.image.alt}
-            decoding="async"
-            fetchPriority="high"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={`${hero.image.mobileSrc} 520w, ${hero.image.desktopSrc} 820w`}
+              sizes="(max-width: 640px) 360px, (max-width: 980px) 520px, 820px"
+            />
+            <img
+              className="hero-image"
+              src={hero.image.src}
+              alt={hero.image.alt}
+              width="820"
+              height="820"
+              decoding="async"
+              fetchPriority="high"
+            />
+          </picture>
         </div>
       </div>
     </section>
